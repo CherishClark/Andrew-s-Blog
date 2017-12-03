@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
   def welcome
+    @posts = Blog.all
+    
   end
 
   def about
